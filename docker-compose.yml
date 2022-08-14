@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  frontend:
+    platform: linux/x86_64
+    container_name: sama-docs-ui-container
+    build:
+      context: .
+      target: cache
+      dockerfile: Dockerfile
+    volumes:
+      - .:/sama-docs-ui-container
+      - /sama-docs-ui-container/node_modules
+    command: npm run start-docker
+    ports:
+      - "4205:4200"
+    environment:
+      # hot reload enabled
+      - CHOKIDAR_USEPOLLING=true
