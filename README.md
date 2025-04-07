@@ -1,9 +1,10 @@
 # SamaDocsUi
 
 Ce projet permet de créer une documentation d'API à partir d'une collection Postman. Elle imitera le style ReDoc.
-* Angular version: **14.1.2**
-* Node version: **14.17.3**
-* npm version : **8.17.0**
+
+- Angular version: **14.1.2**
+- Node version: **14.17.3**
+- npm version : **8.17.0**
 
 ## Installation
 
